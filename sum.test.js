@@ -49,3 +49,8 @@ const fetchPromise = require("./newtopic");
 // test("The data is rejected", ()=>{
 //      return expect(fetchPromise()).rejects.toThrow("error");
 // })
+
+test("the data is peanut butter", async()=>{
+    const data = await fetchPromise();
+    expect(data).toBe("peanut butter");
+})
