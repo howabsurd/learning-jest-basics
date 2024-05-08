@@ -1,5 +1,5 @@
 // const sum = require("./sum");
-const myFunction = require("./sum");
+// const myFunction = require("./sum");
 // test("adds 1+ 2", ()=>{
 //     expect(sum(1,2)).toBe(3);
 // })
@@ -21,7 +21,31 @@ const myFunction = require("./sum");
 //     expect(n).toBeTruthy();
 // })
 
-test("Invalid Input", ()=>{
-    expect(()=>myFunction("Krish"))
-    .toThrow();
-})
+// test("Invalid Input", ()=>{
+//     expect(()=>myFunction("Krish"))
+//     .toThrow();
+// })
+
+// const fetchData = require("./newtopic");
+
+// test("The data is peanut butter", done =>{
+//     function callback(data){
+//         try {
+//             expect(data).toBe("peanut butter")
+//             done()
+//         } catch (error) {
+//             done(error);
+//         }
+//     }
+//     fetchData(callback);
+// })
+
+const fetchPromise = require("./newtopic");
+
+// test("The data is peanut butter", ()=>{
+//     return expect(fetchPromise()).resolves.toBe("peanut butter");
+// })
+
+// test("The data is rejected", ()=>{
+//      return expect(fetchPromise()).rejects.toThrow("error");
+// })
